@@ -7,14 +7,14 @@ def get_row_or_col(text, lb, ub, lower_half_char):
         if char == lower_half_char:
             #lower half
             if distance < 1:
-                #Take lb seat
+                #Take lowerbound
                 result = lb
                 break
             ub = math.floor(ub - distance)
         else:
             #upper half
             if distance < 1:
-                #Take lb seat
+                #Take upperbound 
                 result = ub
                 break
             lb = math.ceil(lb + distance)
